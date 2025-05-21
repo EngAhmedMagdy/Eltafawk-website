@@ -1,0 +1,164 @@
+﻿@page "/courses/edit/{CourseId}"
+@using EltafawkPlatform.Dto
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h2>تعديل الدورة</h2>
+
+@if (form == null)
+{
+    <p>جارٍ تحميل الدورة...</p>
+}
+else
+{
+    <EditForm Model="@form" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label>عنوان الدورة</label>
+            <InputText @bind-Value="form.Title" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>الوصف</label>
+            <InputTextArea @bind-Value="form.Description" class="form-control" rows="4" />
+        </div>
+
+        <div class="mb-3">
+            <label>الفئة</label>
+            <InputText @bind-Value="form.Category" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>رابط يوتيوب</label>
+            <InputText @bind-Value="form.YoutubeVideos" class="form-control mb-2" />
+
+            @if (!string.IsNullOrWhiteSpace(form.YoutubeVideos))
+            {
+                <div class="mb-2">
+                    <iframe width="360" height="215"
+                            src="@GetEmbeddedYoutubeUrl(form.YoutubeVideos)"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            }
+        </div>
+
+
+        <div class="mb-3">
+            <label>نص تعليمي</label>
+            <InputTextArea @bind-Value="form.Texts" class="form-control" rows="3" />
+        </div>
+
+        <div class="mb-3">
+            <label>إضافة صورة جديدة (اختياري)</label>
+            <InputFile OnChange="HandleFileChange" />
+            @if (!string.IsNullOrEmpty(form.ImageFiles))
+            {
+                <div class="mt-2">
+                    <img src="@form.ImageFiles" alt="Current Image" style="max-width: 200px;" />
+                </div>
+            }
+        </div>
+
+        <button class="btn btn-primary" type="submit">حفظ التعديلات</button>
+    </EditForm>
+
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="alert alert-info mt-3">@message</div>
+    }
+}
+
+@code {
+    [Parameter]
+    public string CourseId { get; set; } = "";
+
+    [SupplyParameterFromForm]
+    private CourseUploadDto? form { get; set; }
+    private IBrowserFile? file;
+    private string? message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.form = await Http.GetFromJsonAsync<CourseUploadDto>($"/api/courses/{CourseId}");
+    }
+
+    private void HandleFileChange(InputFileChangeEventArgs e)
+    {
+        file = e.File;
+    }
+    private string GetEmbeddedYoutubeUrl(string url)
+    {
+        if (string.IsNullOrWhiteSpace(url)) return "";
+
+        try
+        {
+            var uri = new Uri(url);
+
+            // if link is like: https://www.youtube.com/watch?v=abc123
+            var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+            if (query.TryGetValue("v", out var videoId))
+            {
+                return $"https://www.youtube.com/embed/{videoId}";
+            }
+
+            // if link is like: https://youtu.be/abc123
+            if (uri.Host.Contains("youtu.be"))
+            {
+                return $"https://www.youtube.com/embed{uri.AbsolutePath}";
+            }
+        }
+        catch
+        {
+            // Invalid URL
+        }
+
+        return "";
+    }
+
+    private async Task HandleSubmit()
+    {
+        if (form == null) return;
+
+        // إذا تم رفع صورة جديدة، نرفعها أولاً إلى السيرفر (API تحميل الصور)
+        if (file != null)
+        {
+            var content = new MultipartFormDataContent();
+            var stream = file.OpenReadStream(10 * 1024 * 1024);
+            var fileContent = new StreamContent(stream);
+            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(file.ContentType);
+            content.Add(fileContent, "file", file.Name);
+
+            var uploadResponse = await Http.PostAsync("/api/uploads", content);
+            if (uploadResponse.IsSuccessStatusCode)
+            {
+                // نفترض أن السيرفر يعيد رابط الصورة كـ string في المحتوى
+                form.ImageFiles = await uploadResponse.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                message = "فشل في رفع الصورة.";
+                return;
+            }
+        }
+
+
+        var response = await Http.PutAsJsonAsync($"/api/courses/{form.Id}", form);
+
+        if (response.IsSuccessStatusCode)
+        {
+            message = "تم حفظ التعديلات بنجاح!";
+            Navigation.NavigateTo("/courses");
+        }
+        else
+        {
+            message = "فشل في تحديث الدورة.";
+        }
+    }
+
+  
+}

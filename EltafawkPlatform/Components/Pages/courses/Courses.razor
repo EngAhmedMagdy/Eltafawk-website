@@ -1,0 +1,81 @@
+﻿@page "/courses"
+@using EltafawkPlatform.Dto
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject IJSRuntime JsRuntime
+
+<h3>الدورات التدريبية</h3>
+
+<button class="btn btn-primary mb-3" @onclick="CreateNew">➕ إضافة دورة جديدة</button>
+
+@if (courses == null)
+{
+    <p>جار التحميل...</p>
+}
+else if (!courses.Any())
+{
+    <p>لا توجد دورات مسجلة.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>العنوان</th>
+                <th>الوصف</th>
+                <th>الفئة</th>
+                <th>تاريخ الإنشاء</th>
+                <th>العمليات</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in courses)
+            {
+                <tr>
+                    <td>@course.Title</td>
+                    <td>@course.Description</td>
+                    <td>@course.Category</td>
+                    <td>
+                        <button class="btn btn-sm btn-info me-1" @onclick="() => EditCourse(course.Id.ToString())">✏️ تعديل</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => DeleteCourse(course.Id.ToString())">🗑️ حذف</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<CourseUploadDto>? courses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await Http.GetFromJsonAsync<List<CourseUploadDto>>("/api/courses");
+    }
+
+    private void CreateNew()
+    {
+        Navigation.NavigateTo("/courses/create");
+    }
+
+    private void EditCourse(string id)
+    {
+        Navigation.NavigateTo($"/courses/edit/{id}");
+    }
+
+    private async Task DeleteCourse(string id)
+    {
+        if (!await JsRuntime.InvokeAsync<bool>("confirm", "هل أنت متأكد من حذف هذه الدورة؟"))
+            return;
+
+        var response = await Http.DeleteAsync($"/api/courses/{id}");
+        if (response.IsSuccessStatusCode)
+        {
+           courses = courses?.Where(c => c.Id != id).ToList();
+        }
+        else
+        {
+            // show error (add your toast or alert here)
+        }
+    }
+}

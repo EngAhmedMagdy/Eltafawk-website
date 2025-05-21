@@ -1,0 +1,46 @@
+﻿@page "/users/edit/{Id}"
+@using EltafawkPlatform.Dto
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h2>تعديل المستخدم</h2>
+
+@if (form == null)
+{
+    <p>جارٍ تحميل البيانات...</p>
+}
+else
+{
+    <EditForm Model="form" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label>الاسم الكامل</label>
+            <InputText class="form-control" @bind-Value="form.FullName" />
+        </div>
+        <div class="mb-3">
+            <label>النوع</label>
+            <InputText class="form-control" @bind-Value="form.Type" />
+        </div>
+
+        <button class="btn btn-primary" type="submit">حفظ التعديلات</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter] public string Id { get; set; } = string.Empty;
+
+    private ApplicationUserDto? form;
+
+    protected override async Task OnInitializedAsync()
+    {
+        form = await Http.GetFromJsonAsync<ApplicationUserDto>($"/api/users/{Id}");
+    }
+
+    private async Task HandleSubmit()
+    {
+        await Http.PutAsJsonAsync($"/api/users/{Id}", form);
+        Navigation.NavigateTo("/users");
+    }
+}

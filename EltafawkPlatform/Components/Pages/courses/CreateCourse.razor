@@ -1,0 +1,101 @@
+﻿@page "/courses/create"
+@using EltafawkPlatform.Dto
+@using System.Text.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<h2>إضافة دورة جديدة</h2>
+<EditForm Model="@form" OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>عنوان الدورة</label>
+        <InputText @bind-Value="form.Title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>الوصف</label>
+        <InputTextArea @bind-Value="form.Description" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>الفئة</label>
+        <InputText @bind-Value="form.Category" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>رابط يوتيوب</label>
+        <InputText @bind-Value="form.YoutubeVideos" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>نص تعليمي</label>
+        <InputTextArea @bind-Value="form.Texts" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>صورة الدورة</label>
+        <InputFile OnChange="HandleFileChange" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">حفظ الدورة</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-info mt-3">@message</div>
+}
+
+
+@code {
+    [SupplyParameterFromForm]
+    private CourseUploadDto form { get; set; } = new()
+    {
+        TeacherId = "682b81f14e5dd86cc34e668a"
+    };
+
+    private IBrowserFile? uploadedFile;
+    private string? message;
+
+    private void HandleFileChange(InputFileChangeEventArgs e)
+    {
+        uploadedFile = e.File;
+    }
+
+    private async Task HandleSubmit()
+    {
+        if (uploadedFile != null)
+        {
+            var path = await UploadImageAsync(uploadedFile) ?? "";
+            form.ImageFiles = path;
+        }
+        var response = await Http.PostAsJsonAsync("/api/courses/create", form);
+        if (response.IsSuccessStatusCode)
+        {
+            message = "تم إنشاء الدورة بنجاح!";
+            Navigation.NavigateTo("/courses");
+        }
+        else
+        {
+            message = "فشل في إنشاء الدورة.";
+        }
+    }
+    private async Task<string?> UploadImageAsync(IBrowserFile file)
+    {
+        var content = new MultipartFormDataContent();
+        var fileContent = new StreamContent(file.OpenReadStream(10 * 1024 * 1024));
+        fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(file.ContentType);
+        content.Add(fileContent, "file", file.Name);
+
+        var response = await Http.PostAsync("/api/courses/upload-image", content);
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<UploadResultDto>();
+            return result?.Path;
+        }
+        return null;
+    }
+
+}
+

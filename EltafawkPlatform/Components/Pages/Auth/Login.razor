@@ -1,0 +1,35 @@
+﻿@page "/login"
+@using EltafawkPlatform.Models
+@inject HttpClient Http
+@inject NavigationManager Nav
+<EditForm Model="@loginModel" OnValidSubmit="HandleLogin" FormName="LoginUserForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="loginModel.Email" class="form-control" placeholder="Email" />
+    <InputText @bind-Value="loginModel.Password" type="password" class="form-control" placeholder="Password" />
+    <button type="submit">Login</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
+
+@code {
+    [SupplyParameterFromForm]
+    private LoginModel loginModel { get; set; } = new();
+    private string message = string.Empty;
+
+    private async Task HandleLogin()
+    {
+        var response = await Http.PostAsJsonAsync("api/auth/login", loginModel);
+        var result = await response.Content.ReadFromJsonAsync<ApiResponse>();
+        message = result?.Message ?? "Unknown error.";
+        if (result?.Success ?? false)
+        {
+            Nav.NavigateTo("/");
+        }
+
+    }
+}

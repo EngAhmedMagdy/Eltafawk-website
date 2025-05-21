@@ -1,0 +1,68 @@
+﻿@page "/users"
+@using EltafawkPlatform.Dto
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject IJSRuntime JsRuntime
+
+<h2>إدارة المستخدمين</h2>
+
+@if (users == null)
+{
+    <p>جارٍ التحميل...</p>
+}
+else
+{
+    //<button class="btn btn-primary mb-3" @onclick="() => Navigation.NavigateTo("/users/create")">+ مستخدم جديد</button>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>الاسم الكامل</th>
+                <th>النوع</th>
+                <th>الإجراءات</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.FullName</td>
+                    <td>@user.Type</td>
+                    <td>
+
+                        <button class="btn btn-sm btn-info me-1" @onclick="() => InboxUser(user.Id.ToString())">💬تواصل</button>
+                        <button class="btn btn-sm btn-info me-1" @onclick="() => EditUser(user.Id.ToString())">✏️ تعديل</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => DeleteUser(user.Id.ToString())">🗑️ حذف</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ApplicationUserDto>? users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await Http.GetFromJsonAsync<List<ApplicationUserDto>>("/api/users");
+    }
+
+    private void InboxUser(string id)
+    {
+        Navigation.NavigateTo($"/inbox/send-message");
+    }
+    private void EditUser(string id)
+    {
+        Navigation.NavigateTo($"/users/edit/{id}");
+    }
+
+    private async Task DeleteUser(string id)
+    {
+        if (!await JsRuntime.InvokeAsync<bool>("confirm", "هل أنت متأكد من حذف هذه المستخدم؟"))
+            return;
+
+        await Http.DeleteAsync($"/api/users/{id}");
+        users = await Http.GetFromJsonAsync<List<ApplicationUserDto>>("/api/users");
+    }
+}  
