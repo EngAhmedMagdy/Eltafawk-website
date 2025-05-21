@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("2767c77f-ff99-4135-a5b1-24f589c0f514")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EltafawkPlatform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72351ed63cdd9aa20593cffa4f4df85af48c9f98")]
 [assembly: System.Reflection.AssemblyProductAttribute("EltafawkPlatform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EltafawkPlatform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

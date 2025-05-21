@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4893FF3D-297F-42ED-886E-72DB29C8CB29}|EltafawkPlatform\\EltafawkPlatform.csproj|c:\\users\\ahmed magdy\\desktop\\freelance\\eltafawk website\\eltafawkplatform\\eltafawkplatform\\railway.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4893FF3D-297F-42ED-886E-72DB29C8CB29}|EltafawkPlatform\\EltafawkPlatform.csproj|solutionrelative:eltafawkplatform\\railway.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4893FF3D-297F-42ED-886E-72DB29C8CB29}|EltafawkPlatform\\EltafawkPlatform.csproj|c:\\users\\ahmed magdy\\desktop\\freelance\\eltafawk website\\eltafawkplatform\\eltafawkplatform\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4893FF3D-297F-42ED-886E-72DB29C8CB29}|EltafawkPlatform\\EltafawkPlatform.csproj|solutionrelative:eltafawkplatform\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4893FF3D-297F-42ED-886E-72DB29C8CB29}|EltafawkPlatform\\EltafawkPlatform.csproj|c:\\users\\ahmed magdy\\desktop\\freelance\\eltafawk website\\eltafawkplatform\\eltafawkplatform\\components\\pages\\courses\\createcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4893FF3D-297F-42ED-886E-72DB29C8CB29}|EltafawkPlatform\\EltafawkPlatform.csproj|solutionrelative:eltafawkplatform\\components\\pages\\courses\\createcourse.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -178,7 +186,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Controllers\\UsersController.cs",
@@ -187,25 +195,50 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAowB4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T20:43:47.317Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "railway.toml",
+              "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\railway.toml",
+              "RelativeDocumentMoniker": "EltafawkPlatform\\railway.toml",
+              "ToolTip": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\railway.toml",
+              "RelativeToolTip": "EltafawkPlatform\\railway.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-21T14:58:16.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Dockerfile",
+              "RelativeDocumentMoniker": "EltafawkPlatform\\Dockerfile",
+              "ToolTip": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Dockerfile",
+              "RelativeToolTip": "EltafawkPlatform\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-21T14:56:21.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CreateCourse.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\courses\\CreateCourse.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\courses\\CreateCourse.razor",
               "ToolTip": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\courses\\CreateCourse.razor",
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\courses\\CreateCourse.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-20T11:27:31.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Inbox.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Inbox\\Inbox.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Inbox\\Inbox.razor",
@@ -213,12 +246,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Inbox\\Inbox.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T21:43:14.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:43:14.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SendMessage.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Inbox\\SendMessage.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Inbox\\SendMessage.razor",
@@ -226,12 +258,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Inbox\\SendMessage.razor",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T21:49:12.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:49:12.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EditCourse.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\courses\\EditCourse.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\courses\\EditCourse.razor",
@@ -239,12 +270,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\courses\\EditCourse.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T11:37:18.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T11:37:18.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Layout\\NavMenu.razor",
@@ -252,12 +282,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABEAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T20:26:17.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T20:26:17.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Courses.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\courses\\Courses.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\courses\\Courses.razor",
@@ -265,12 +294,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\courses\\Courses.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T20:52:02.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:52:02.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Controllers\\CoursesController.cs",
@@ -278,12 +306,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Controllers\\CoursesController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:11:59.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:11:59.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "InboxController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Controllers\\InboxController.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Controllers\\InboxController.cs",
@@ -291,12 +318,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Controllers\\InboxController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:08:56.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:08:56.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Users.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Users\\Users.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Users\\Users.razor",
@@ -304,12 +330,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Users\\Users.razor",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T20:48:12.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:48:12.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "EditUser.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Users\\EditUser.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Users\\EditUser.razor",
@@ -317,12 +342,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Users\\EditUser.razor",
               "ViewState": "AgIAABkAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T20:51:19.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:51:19.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Program.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Program.cs",
@@ -330,12 +354,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Program.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAEgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:09:20.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:09:20.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "InboxMessageDto.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Dto\\InboxMessageDto.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Dto\\InboxMessageDto.cs",
@@ -343,12 +366,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Dto\\InboxMessageDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:13:29.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:13:29.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Auth\\Login.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Auth\\Login.razor",
@@ -356,12 +378,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Auth\\Login.razor",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-19T18:31:41.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T18:31:41.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Home.razor",
@@ -369,12 +390,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T19:34:23.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T19:34:23.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UserMapper.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Mapper\\UserMapper.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Mapper\\UserMapper.cs",
@@ -382,12 +402,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Mapper\\UserMapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:33:32.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:33:32.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "CourseMapper.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Mapper\\CourseMapper.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Mapper\\CourseMapper.cs",
@@ -395,12 +414,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Mapper\\CourseMapper.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwBgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:34:30.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:34:30.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Controllers\\StudentController.cs",
@@ -408,12 +426,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Controllers\\StudentController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:22:20.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T20:22:20.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\ApplicationUser.cs",
@@ -421,12 +438,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:38:06.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:38:06.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Services\\AuthService.cs",
@@ -434,12 +450,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Services\\AuthService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T19:00:16.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T19:00:16.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Services\\UserService.cs",
@@ -447,12 +462,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Services\\UserService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:19:47.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:19:47.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Enum\\UserType.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Enum\\UserType.cs",
@@ -460,12 +474,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Enum\\UserType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:26:58.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:26:58.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\LoginModel.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\LoginModel.cs",
@@ -473,12 +486,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Models\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:31:05.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T18:31:05.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\RegisterModel.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\RegisterModel.cs",
@@ -486,12 +498,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Models\\RegisterModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:30:45.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T18:30:45.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Services\\StudentService.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Services\\StudentService.cs",
@@ -499,12 +510,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Services\\StudentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:06:06.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T21:06:06.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "OfferModel.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\OfferModel.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\OfferModel.cs",
@@ -512,12 +522,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Models\\OfferModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:22:21.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T11:22:21.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "InboxService.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Services\\InboxService.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Services\\InboxService.cs",
@@ -525,12 +534,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Services\\InboxService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:07:29.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:07:29.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ReplyModel.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\ReplyModel.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\ReplyModel.cs",
@@ -538,12 +546,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Models\\ReplyModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T19:57:56.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T19:57:56.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "UploadResultDto.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Dto\\UploadResultDto.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Dto\\UploadResultDto.cs",
@@ -551,12 +558,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Dto\\UploadResultDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:38:55.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T18:38:55.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Layout\\MainLayout.razor",
@@ -564,12 +570,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAIAAAAAAAAAAAAiwA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T20:26:16.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T20:26:16.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CourseModel.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\CourseModel.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\CourseModel.cs",
@@ -577,12 +582,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Models\\CourseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:21:46.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T11:21:46.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "CourseUploadDto.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Dto\\CourseUploadDto.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Dto\\CourseUploadDto.cs",
@@ -590,12 +594,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Dto\\CourseUploadDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:04:08.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T18:04:08.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Register.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Auth\\Register.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Auth\\Register.razor",
@@ -603,12 +606,11 @@
               "RelativeToolTip": "EltafawkPlatform\\Components\\Pages\\Auth\\Register.razor",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T12:14:56.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T12:14:56.022Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Pages\\Error.razor",
@@ -620,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Models\\ApiResponse.cs",
@@ -632,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\Routes.razor",
@@ -644,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\App.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\App.razor",
@@ -656,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\appsettings.json",
               "RelativeDocumentMoniker": "EltafawkPlatform\\appsettings.json",
@@ -668,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "MongoDbSettings.cs",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Settings\\MongoDbSettings.cs",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Settings\\MongoDbSettings.cs",
@@ -680,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "EltafawkPlatform.csproj",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\EltafawkPlatform.csproj",
               "RelativeDocumentMoniker": "EltafawkPlatform\\EltafawkPlatform.csproj",
@@ -692,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\ahmed magdy\\Desktop\\freelance\\Eltafawk website\\EltafawkPlatform\\EltafawkPlatform\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "EltafawkPlatform\\Components\\_Imports.razor",
